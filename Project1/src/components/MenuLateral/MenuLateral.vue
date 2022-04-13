@@ -10,8 +10,12 @@ defineProps({
 <template>
 <div id="menu" >
     <ul id="Rotas">
-		<li v-for="link in links">
-        
+		<li>
+            <router-links
+                v-for="link in links"
+                :key="link.id"
+                :to="{name:}"
+            >
             <a >{{ titulo }}</a>
         </li>
 	</ul>

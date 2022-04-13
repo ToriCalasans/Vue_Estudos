@@ -1,20 +1,21 @@
 <script setup>
 import { ref } from 'vue'
+import MenuLateral from 'src\views\Pagina1.vue'
 
 defineProps({
  
 })
 
-const Rotas ={
-    data(){
-        return{
-            links:[
-                {titulo:"Página 1", endereco:"google.com.br"},
-                {titulo:"Página 2", endereco:"google.com.br"}
-                ]
-        }
-    }
+const rotas ={
+    {path: '/', name:'Home', component:Home},
+    {path: '/pagina1', name: 'Pagina1', component: ()=>import('src\Views')},
+    {path: '/pagina1', name: 'Pagina1', component: ()=>import('src\Views')},
+
 }
 
-Vue.createApp(Rotas).mount('#Rotas')
+const rota = createRouter({
+    history: createWebHistory(),
+    rotas
+})
+export default rota
 </script>
