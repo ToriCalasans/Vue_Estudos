@@ -1,0 +1,49 @@
+<div class="p-col-12 p-md-6 p-xl-3; flex-direction:column;" style="padding-top: 10px;margin-bottom:10px;border-radius: 5px;border-left: 5px solid rgb(91, 151, 88);/*border-right: 5px solid rgb(251, 255, 0);*/box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);width: 28%;margin-right: 2%;background-color: white;">
+    <div style="margin-bottom:10px;">
+        <div class="row" style="margin-left: 10px;text-align: left;">
+            <span class="overview-icon" style="font-weight: bolder; color:rgb(92, 92, 92);">
+                <i class="fa fa-legal icon icon-menu"
+                    style="border-radius: 5px;padding: 4.5px;margin-right: 5px;background-color: rgba(111, 122, 110, 9%);color: rgb(91 151 88);"></i>
+                <span class="text-muted text-xs" style="font-weight: bolder; color:rgb(92, 92, 92);">Expedientes</span>
+                <!--
+            <span ng-if="!(setor.total_processos_intimacoes_pendentes > 1)" class="text-muted text-xs" style="font-weight: bolder; color:rgb(92, 92, 92);">Expediente</span> </span>
+          -->
+            </span></div>
+
+        <div class="p-grid overview-detail" style="display: flex; flex-direction: row;">
+            <!--Intimações-->
+            <div class="col-xs-6" style="margin-bottom:10px;font-weight: bolder; border-right: 1px solid #74797e;">
+
+                <div class="overview-number">
+                    <a ui-sref="app.prazo.listar({aba: 'I', setor: 9330})" class="fill-div">
+                        <span class="text-white font-thin h1 block ng-binding"
+                            style="font-weight: bolder; color:rgb(92, 92, 92);">118</span>
+                    </a>
+                </div>
+                <div class="overview-subtext" style="font-weight: normal;">
+                    <span class="text-muted text-xs"
+                        style="font-weight: bolder; color:rgb(92, 92, 92);">Intimações</span>
+                    <!-- ngIf: !(setor.total_processos_intimacoes_pendentes > 1) -->
+                </div>
+
+            </div>
+            <!--Citações-->
+            <div class="col-xs-6" style="margin-bottom:10px;font-weight: bolder;">
+
+                <div class="overview-number">
+                    <a ui-sref="app.prazo.listar({aba: 'C', setor: 9330})" class="fill-div">
+                        <span class="text-white font-thin h1 block ng-binding"
+                            style="font-weight: bolder; color:rgb(92, 92, 92);">0 </span>
+                    </a>
+                </div>
+                <div class="overview-subtext" style="font-weight: normal;">
+                    <!-- ngIf: setor.total_processos_citacoes_pendentes > 1 -->
+                    <!-- ngIf: !(setor.total_processos_citacoes_pendentes > 1) --><span
+                        ng-if="!(setor.total_processos_citacoes_pendentes > 1)" class="text-muted text-xs ng-scope"
+                        style="font-weight: bolder; color: rgb(92, 92, 92);">Citação</span>
+                    <!-- end ngIf: !(setor.total_processos_citacoes_pendentes > 1) -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,7 @@
 <script setup>
 import { ref } from 'vue'
+import Cards from '../components/cards.vue';
+import Dashbord from '../components/Dashbord.vue';
 
 defineProps({
   msg: String
@@ -8,18 +10,16 @@ defineProps({
 </script>
 
 <template>
-  <div id="home">
-    <h1>{{ msg }}</h1>
-    <img alt="Dance Dance" src="src/assets/anime-dance.gif"/> 
+  <div  class="grid grid-cols-1 md:container md:mx-auto">
+    <Dashbord>
+      
+    </Dashbord>
+   
   </div>
+  
 </template>
-
+ <!--    <img alt="Dance Dance" src="src/assets/anime-dance.gif"/> -->
+ <!-- -->
 <style scoped>
-#home{
-   width: 50%;
-   height:100%;
-   margin: 0; padding: 0;
-   float: left;
-   background-color: #ffdab9;
-}
+
 </style>
