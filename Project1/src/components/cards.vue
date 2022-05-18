@@ -16,7 +16,7 @@ defineProps({
       <div class="divide-x-2 flex items-center justify-center border-t-0">
         <div class="flex items-center justify-center w-52">
           <div class="">
-            <p>182</p>
+            <p>182 </p>
           </div>
           <div class="">
             <p>Intimações</p>
@@ -24,10 +24,11 @@ defineProps({
         </div>
         <div class="flex items-center justify-center w-52">
           <div class="">
-            <p>183</p>
+            <p>183 </p>
           </div>
           <div class="">
             <p>Citações</p>
+            
           </div>
         </div>
       </div>

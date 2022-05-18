@@ -10,8 +10,13 @@ defineProps({
 
 <template>
   <div class="dashbord md:container md:mx-auto min-h-full">
-        <span class="text-xs">Tori esteve aqui</span>
-        <cards></cards>
+        
+        <span class="text-xs">Tori esteve aqui</span>  
+        <fa icon="music"></fa> 
+
+        <cards>
+        
+        </cards>
   </div>
 </template>
 
